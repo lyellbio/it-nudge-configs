@@ -1,0 +1,35 @@
+# See https://pre-commit.com for more information
+# local hooks are committed to .githooks/hook-name
+# the task pre-commit:init does the following:
+# installs pre-commit binary
+# configures .git/hooks/pre-commit to load this config
+default_stages:
+  - "commit"
+  - "manual"
+repos:
+  - repo: https://github.com/zricethezav/gitleaks
+    rev: v7.5.0
+    hooks:
+    - id: gitleaks
+      args: ['--path=.', '--redact', '--commit-from="origin/HEAD"']
+      pass_filenames: false
+
+  - repo: git://github.com/pre-commit/pre-commit-hooks
+    rev: v3.4.0
+    hooks:
+      - id: check-merge-conflict
+      - id: check-yaml
+        args: ["--unsafe"]
+      - id: trailing-whitespace
+      - id: check-json
+
+  - repo: git://github.com/igorshubovych/markdownlint-cli
+    rev: v0.27.1
+    hooks:
+      - id: markdownlint
+        entry: markdownlint --ignore .github/pull_request_template.md
+
+  - repo: https://github.com/shellcheck-py/shellcheck-py
+    rev: v0.7.2.1
+    hooks:
+      - id: shellcheck

@@ -1,0 +1,19 @@
+version: 3
+
+tasks:
+  lint:
+    deps: [init]
+    desc: project lint step
+    cmds:
+      - pre-commit run -a
+  init:
+    desc: Initialize pre-commit
+    summary: |
+      Run this task to initialize pre-commit hooks
+      Commit hooks are defined in .pre-commit-config.yaml
+    cmds:
+      - pip install pre-commit
+      - pre-commit install --install-hooks
+    status:
+      - command -v pre-commit
+    silent: true
