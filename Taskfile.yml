@@ -14,6 +14,4 @@ tasks:
     cmds:
       - pip install pre-commit
       - pre-commit install --install-hooks
-    status:
-      - command -v pre-commit
     silent: true
