@@ -7,7 +7,7 @@
         "days_between_notifications": 0,
         "dismissal_count_threshold": 6,
         "logo_path": "/Library/nudge/Resources/lyell-company-logo.png",
-        "main_subtitle_text": "Hi Lyellites! A friendly reminder from your local IT team",
+        "main_subtitle_text": "Hi Lyellite! A friendly reminder from your local IT team",
         "main_title_text": "macOS Update",
         "minimum_os_sub_build_version": "20E766",
         "minimum_os_version": "10.15.5",
