@@ -1,7 +1,7 @@
 {
   "optionalFeatures": {
     "acceptableApplicationBundleIDs": [
-      "us.zoom.xos"
+      "us.zoom.xosd"
     ],
     "aggressiveUserExperience": true,
     "asyncronousSoftwareUpdate": true,
