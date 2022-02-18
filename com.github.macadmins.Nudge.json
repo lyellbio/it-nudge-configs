@@ -36,7 +36,7 @@
     },
     {
       "aboutUpdateURL": "https://www.apple.com/macos/monterey-preview/",
-      "requiredInstallationDate": "2022-02-26T00:00:00Z",
+      "requiredInstallationDate": "2022-03-10T00:00:00Z",
       "requiredMinimumOSVersion": "12.2.1",
       "targetedOSVersionsRule": "12"
     }
