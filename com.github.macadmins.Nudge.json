@@ -30,14 +30,14 @@
         }
       ],
       "aboutUpdateURL": "https://support.apple.com/en-us/HT211896",
-      "requiredInstallationDate": "2022-07-27T00:00:00Z",
-      "requiredMinimumOSVersion": "11.6.7",
+      "requiredInstallationDate": "2022-08-27T00:00:00Z",
+      "requiredMinimumOSVersion": "11.6.8",
       "targetedOSVersionsRule": "11"
     },
     {
       "aboutUpdateURL": "https://www.apple.com/macos/monterey-preview/",
-      "requiredInstallationDate": "2022-07-27T00:00:00Z",
-      "requiredMinimumOSVersion": "12.4",
+      "requiredInstallationDate": "2022-08-27T00:00:00Z",
+      "requiredMinimumOSVersion": "12.5",
       "targetedOSVersionsRule": "12"
     }
   ],
